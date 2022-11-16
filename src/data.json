@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "district": "Çankaya - Start Location",
+    "long":32.866,
+    "lat": 39.925,
+    "city": "Ankara",
+    "country": "Turkey",
+    "timezone": "Europe/Istanbul",
+    "iconPng":"start"
+  },
+  {
+    "id": 2,
+    "district": "Kızılay",
+    "long": 32.848,
+    "lat": 39.922,
+    "city": "Ankara",
+    "country": "Turkey",
+    "timezone": "Europe/Istanbul",
+    "iconPng":"marker-icon"
+
+    
+  },
+  {
+    "id": 3,
+    "district": "Keçiören Şelale",
+    "long": 32.860,
+    "lat": 39.978,
+    "city": "Ankara",
+    "country": "Turkey",
+    "timezone": "Europe/Istanbul",
+    "iconPng":"marker-icon"
+
+  },
+  {
+    "id": 4,
+    "district": "Sıhhiye",
+    "long": 32.855,
+    "lat": 39.926,
+    "city": "Ankara",
+    "country": "Turkey",
+    "timezone": "Europe/Istanbul",
+    "iconPng":"marker-icon"
+
+  },
+  {
+    "id": 5,
+    "district": "Atatürk Orman Çiftliği - Finish Location",
+    "long": 32.786,
+    "lat": 39.946,
+    "city": "Ankara",
+    "country": "Turkey",
+    "timezone": "Europe/Istanbul",
+    "iconPng":"finish"
+
+  }
+]
