@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   MapContainer,
   Marker,
@@ -15,6 +15,8 @@ const Home = () => {
     return [location.lat, location.long];
   });
 
+  const [openLine, setOpenLine] = useState(true);
+
   const colorOptions = { color: "#267FCA" };
   const position = [39.95, 32.85];
 
@@ -26,7 +28,7 @@ const Home = () => {
       popupAnchor: [1, -34],
       tooltipAnchor: [16, -28],
     });
-  }
+  };
 
   return (
     <div>
@@ -52,8 +54,18 @@ const Home = () => {
               <Popup>{location.district}</Popup>
             </Marker>
           ))}
-          <Polyline pathOptions={colorOptions} positions={multiPolyline} />
+          {openLine && (
+            <Polyline pathOptions={colorOptions} positions={multiPolyline} />
+          )}
         </MapContainer>
+        <div className="d-flex justify-content-center align-items-center mt-5 ">
+          <button
+            className="btn btn-primary me-4"
+            onClick={() => setOpenLine(!openLine)}
+          >
+            Show/Hide Line
+          </button>
+        </div>
       </div>
     </div>
   );
